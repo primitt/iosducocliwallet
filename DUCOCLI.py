@@ -1,4 +1,5 @@
 import ducoapi
+import time
 api = ducoapi.api_actions()
 print("Welcome to the primitt duco balance viewer, this only has a little"
       " stuff you can do with it, but ill add more later")
@@ -16,8 +17,16 @@ while True:
             rc = input("Username to send funds to: ")
             amt = input("Amount to send: ")
             api.transfer(recipient_username=rc, amount=amt)
-      if inp=="bal" or "balance" or "monai":
-            print("balance: ",api.balance())
+            time.sleep(5)
+            print("Sent ",amt,"DUCO to", rc,)
+            time.sleep(1)
+      elif inp=="bal":
+            print("balance of account primitt: ",api.balance())
+            time.sleep(1)
+      if inp=="help":
+            print("Commands: "
+                  "help, send, bal")
+
 
 
 
@@ -29,6 +38,8 @@ while True:
 ##    print("
 ##api.balance()
 ##print(api.balance())
+
+
 
 
 
