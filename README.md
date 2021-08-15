@@ -1,5 +1,6 @@
 # primittcli
-A CLI terminal for duinocoin.....
+A stripped down CLI wallet for duinocoin 
+This is for iphones because the ios app is not out yet.... This is also just a dump project XD, i just did this cause i was bored.
 
 
 ## Needed stuff:
