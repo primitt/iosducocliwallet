@@ -16,7 +16,7 @@ while True:
       if inp=="send":
             rc = input("Username to send funds to: ")
             amt = input("Amount to send: ")
-            api.transfer(recipient_username=rc, amount=amt)
+            api.transfer(recipient_username=rc, amount=amt, message=hello)
             time.sleep(5)
             print("Sent ",amt,"DUCO to", rc,)
             time.sleep(1)
@@ -26,6 +26,13 @@ while True:
       if inp=="help":
             print("Commands: "
                   "help, send, bal")
+      if inp=="transactions":
+          txam = input("Amount of transactions that you would like to view: ")
+          txpm = api.getTransactions(txam)
+          print(txpm)
+    
+
+
 
 
 

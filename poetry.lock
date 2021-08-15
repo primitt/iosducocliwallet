@@ -1,0 +1,18 @@
+[[package]]
+name = "ducoapi"
+version = "0.0.2"
+description = "Duino-Coin Mining library for Python."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "0accd42b28c09500df3a449aa4d63d597fd51c76f6529801320de8b20570eb97"
+
+[metadata.files]
+ducoapi = [
+    {file = "ducoapi-0.0.2-py3-none-any.whl", hash = "sha256:9bc9b12125fd3e6af2bd1ee8728c16dd67f53f54d5cdafd91fca617fbeb090fb"},
+    {file = "ducoapi-0.0.2.tar.gz", hash = "sha256:4fd86bcbae8e3b320784c56ce62f023c8daefb00ef0c9c1d33205728844db95c"},
+]
