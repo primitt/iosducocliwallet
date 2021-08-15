@@ -1,8 +1,10 @@
 import ducoapi
 import time
 api = ducoapi.api_actions()
+
+
 print("Welcome to the primitt duco balance viewer, this only has a little"
-      " stuff you can do with it, but ill add more later")
+      +" stuff you can do with it, but ill add more" +" later")
 un = input("Enter your username: ")
 pw = input("Enter your password: ")
 
@@ -20,17 +22,24 @@ while True:
             time.sleep(5)
             print("Sent ",amt,"DUCO to", rc,)
             time.sleep(1)
-      elif inp=="bal":
+      if inp=="bal":
             print("balance of account primitt: ",api.balance())
             time.sleep(1)
       if inp=="help":
             print("Commands: "
-                  "help, send, bal")
+                  "help, send, bal, transactions, price")
       if inp=="transactions":
           txam = input("Amount of transactions that you would like to view: ")
           txpm = api.getTransactions(txam)
           print(txpm)
-    
+      if inp=="price":
+          pr = ducoapi.get_duco_price()
+          print("DUCO price in USD: $",pr)
+      
+
+      
+
+
 
 
 
